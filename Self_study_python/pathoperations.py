@@ -1,7 +1,15 @@
 import os
 from pathlib import Path
 import shutil
-
+# Python 提供了 os 和 shutil 模块来进行文件系统的操作，如文件和目录的创建、删除、重命名等。
+#
+# 常见的文件系统操作：
+# os.path.exists()：检查文件或目录是否存在
+# os.remove()：删除文件
+# os.rename()：重命名文件
+# os.mkdir()：创建目录
+# os.rmdir()：删除空目录
+# shutil.rmtree()：递归删除目录及其内容
 
 # 获取当前工作目录
 # 使用 os 模块
@@ -105,3 +113,5 @@ shutil.move('/path/to/source.txt', '/path/to/destination')
 for file in Path('E:\Python\my-first-repository').glob('*.docx'):
     new_name = file.stem + '_new' + file.suffix
     file.rename(file.with_name(new_name))
+
+

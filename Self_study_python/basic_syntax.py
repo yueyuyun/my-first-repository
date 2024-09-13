@@ -93,23 +93,3 @@ x = 5
 print(type(x))  # 输出：<class 'int'>
 print(type(a))
 print(type(c))
-# 3.3 条件与循环
-# Python 中条件语句和循环是控制程序流程的重要部分。
-#
-# 条件判断：
-x = 10
-if x > 5:
-    print("x is greater than 5")
-elif x == 5:
-    print("x is 5")
-else:
-    print("x is less than 5")
-# for 循环
-for i in range(5):
-    print(i)  # 输出：0 1 2 3 4
-
-# while 循环
-x = 0
-while x < 5:
-    print(x)
-    x += 1  # 每次循环后加 1
