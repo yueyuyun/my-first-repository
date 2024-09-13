@@ -58,7 +58,7 @@ plt.grid(True, which='both', linestyle='--', linewidth=0.7, alpha=0.7)  # 设置
 # 显示图形
 plt.tight_layout()  # 自动调整子图参数，使图形布局紧凑
 plt.show(block=False)
-plt.savefig('D:/python/pythonProject/Self_study_python/图片/精度评价.png', dpi=300, bbox_inches='tight')
+plt.savefig('E:\Python\my-first-repository\Self_study_python\图片\精度评价.png', dpi=300, bbox_inches='tight')
 bbox_inches='tight' #确保图像边缘不会被裁剪。
 
 
@@ -76,7 +76,7 @@ plt.xlabel('x-axis')
 plt.ylabel('y-axis')
 # 显示图形
 plt.show(block=False)
-plt.savefig('D:/python/pythonProject/Self_study_python/图片/折线图.png', dpi=300, bbox_inches='tight')
+plt.savefig('E:\Python\my-first-repository\Self_study_python\图片\折线图.png', dpi=300, bbox_inches='tight')
 bbox_inches='tight' #确保图像边缘不会被裁剪。
 
 
@@ -95,7 +95,7 @@ sns.lmplot(x="total_bill", y="tip", data=tips)
 sns.set_style("whitegrid")  # 设置背景样式
 sns.set_palette("pastel")   # 设置调色板
 plt.show(block=False)
-plt.savefig('D:/python/pythonProject/Self_study_python/图片/带回归线的散点图.png', dpi=300, bbox_inches='tight')
+plt.savefig('E:\Python\my-first-repository\Self_study_python\图片\带回归线的散点图.png', dpi=300, bbox_inches='tight')
 bbox_inches='tight' #确保图像边缘不会被裁剪。
 
 
@@ -141,7 +141,7 @@ axs[1, 0].bar(categories, values)
 axs[1, 1].hist(data, bins=30)
 plt.show(block=False)
 # gridspec 允许你更精细地控制子图的排列方式。
-plt.savefig('D:/python/pythonProject/Self_study_python/图片/子图.png', dpi=300, bbox_inches='tight')
+plt.savefig('E:\Python\my-first-repository\Self_study_python\图片\子图.png', dpi=300, bbox_inches='tight')
 bbox_inches='tight' #确保图像边缘不会被裁剪。
 
 
@@ -155,8 +155,7 @@ def update(num, x, line):
 
 ani = animation.FuncAnimation(fig, update, frames=100, fargs=[x, line])
 # 保存动图
-ani.save('D:/python/pythonProject/Self_study_python/图片/动图.gif', writer='imagemagick', fps=30)
-
+ani.save('E:\Python\my-first-repository\Self_study_python\图片\动图.gif', writer='imagemagick', fps=30)
 # 如果要保存为 mp4 格式：
 # ani.save('path/to/save/sine_wave_animation.mp4', writer='ffmpeg', fps=30)
 plt.show(block=False)
